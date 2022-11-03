@@ -9,21 +9,17 @@
  */
 
 import React, {type PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-} from 'react-native';
+import {SafeAreaView} from 'react-native';
 
 import {NavigationContainer} from '@react-navigation/native';
 
 import AppStack from './src/Navigation';
 
 const App = () => {
-
   return (
     <NavigationContainer>
       <SafeAreaView style={{flex: 1}}>
         <AppStack />
-    
       </SafeAreaView>
     </NavigationContainer>
   );

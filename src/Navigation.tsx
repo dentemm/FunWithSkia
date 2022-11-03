@@ -1,19 +1,20 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Demo1 from './Demo1';
 import Entry from './Entry';
 
 export enum RouteNames {
   Entry = 'Entry',
-  Demo1 = 'Demo1',
-  Demo2 = 'Demo2',
-  Demo3 = 'Demo3',
+  Demo1 = 'Image Filters',
+  Demo2 = 'Shadows',
+  Demo3 = 'Halloween',
 }
 
-type ParamList = {
+export type ParamList = {
   [RouteNames.Entry]: undefined;
   [RouteNames.Demo1]: undefined;
   [RouteNames.Demo2]: undefined;
   [RouteNames.Demo3]: undefined;
-}
+};
 
 const Stack = createNativeStackNavigator<ParamList>();
 
@@ -23,12 +24,16 @@ const AppStack: React.FC = () => {
       initialRouteName={RouteNames.Entry}
       screenOptions={{
         headerShown: true,
-      }}
-    >
-      <Stack.Screen name={RouteNames.Entry} component={Entry} options={{headerShown: false}} />
-      {/* <Stack.Group>
-        <Stack.Screen name={RouteNames.Modal} component={ModalScreen} />
-      </Stack.Group> */}
+      }}>
+      <Stack.Screen
+        name={RouteNames.Entry}
+        component={Entry}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name={RouteNames.Demo1}
+        component={Demo1}
+      />
     </Stack.Navigator>
   );
 };
