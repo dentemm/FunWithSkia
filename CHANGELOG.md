@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/dentemm/FunWithSkia/compare/v1.0.0...v1.0.1) (2022-11-15)
+
+
+### Bug Fixes
+
+* fixed rendering issue ([92e281b](https://github.com/dentemm/FunWithSkia/commit/92e281b9f411cf22bee7b4185890193e8682fc67))
+
 ## 1.0.0 (2022-11-03)
 
 
