@@ -8,10 +8,10 @@
  * @format
  */
 
-import {Route, useNavigation} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import React from 'react';
-import {FlatList, Pressable, Text, View} from 'react-native';
+import {FlatList, Pressable, SafeAreaView, Text, View} from 'react-native';
 import {ParamList, RouteNames} from './Navigation';
 
 interface DataItem {
@@ -34,7 +34,18 @@ const Entry: React.FC = () => {
   ];
 
   const onPress = (idx: number) => {
+
+    console.log(idx)
+
     switch (idx) {
+      case 1:
+        nav.navigate(RouteNames.Demo2);
+        break;
+
+      case 2:
+        nav.navigate(RouteNames.Demo3);
+        break;
+
       default:
         nav.navigate(RouteNames.Demo1);
     }
@@ -73,7 +84,7 @@ const Entry: React.FC = () => {
   );
 
   return (
-    <View style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1}}>
       <Text
         style={{
           fontSize: 36,
@@ -89,7 +100,7 @@ const Entry: React.FC = () => {
         keyExtractor={item => item.name}
         ItemSeparatorComponent={() => separator}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 

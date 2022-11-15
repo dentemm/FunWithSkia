@@ -1,5 +1,7 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Demo1 from './Demo1';
+import Demo2 from './Demo2';
+import Demo3 from './Demo3';
 import Entry from './Entry';
 
 export enum RouteNames {
@@ -33,6 +35,15 @@ const AppStack: React.FC = () => {
       <Stack.Screen
         name={RouteNames.Demo1}
         component={Demo1}
+      />
+      <Stack.Screen
+        name={RouteNames.Demo2}
+        component={Demo2}
+      />
+      <Stack.Screen
+        name={RouteNames.Demo3}
+        component={Demo3}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );

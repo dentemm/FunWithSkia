@@ -18,9 +18,7 @@ import AppStack from './src/Navigation';
 const App = () => {
   return (
     <NavigationContainer>
-      <SafeAreaView style={{flex: 1}}>
-        <AppStack />
-      </SafeAreaView>
+      <AppStack />
     </NavigationContainer>
   );
 };

@@ -1,4 +1,5 @@
 export const Images = {
-  hauntedHouse: require('./hauntedjouse.jpeg');
+  lake: require('./lake.jpeg'),
+  hauntedHouse: require('./hauntedhouse.jpeg')
 };
 

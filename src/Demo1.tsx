@@ -1,9 +1,19 @@
 import React from 'react';
 
-import {Canvas, Image, useImage} from '@shopify/react-native-skia';
+import {Blur, Canvas, ColorMatrix, Image, rect, Skia, useImage} from '@shopify/react-native-skia';
+import { Images } from './assets';
+import { useWindowDimensions } from 'react-native';
 
 const Demo1: React.FC = () => {
-  return <Canvas />;
+
+  const { width } = useWindowDimensions();
+
+  const height = width * 2; 
+
+  return (
+    <Canvas style={{flex: 1, backgroundColor: 'hotpink', width}}>
+    </Canvas>
+  );
 };
 
 export default Demo1;
