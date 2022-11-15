@@ -8,8 +8,6 @@ const Demo1: React.FC = () => {
 
   const { width } = useWindowDimensions();
 
-  const height = width * 2; 
-
   return (
     <Canvas style={{flex: 1, backgroundColor: 'hotpink', width}}>
     </Canvas>
