@@ -24,22 +24,14 @@ const AppStack: React.FC = () => {
   return (
     <Stack.Navigator
       initialRouteName={RouteNames.Entry}
-      screenOptions={{
-        headerShown: true,
-      }}>
+    >
       <Stack.Screen
         name={RouteNames.Entry}
         component={Entry}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name={RouteNames.Demo1}
-        component={Demo1}
-      />
-      <Stack.Screen
-        name={RouteNames.Demo2}
-        component={Demo2}
-      />
+      <Stack.Screen name={RouteNames.Demo1} component={Demo1} />
+      <Stack.Screen name={RouteNames.Demo2} component={Demo2} />
       <Stack.Screen
         name={RouteNames.Demo3}
         component={Demo3}

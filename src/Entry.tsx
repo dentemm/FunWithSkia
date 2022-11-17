@@ -11,8 +11,9 @@
 import {useNavigation} from '@react-navigation/native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import React from 'react';
-import {FlatList, Pressable, SafeAreaView, Text, View} from 'react-native';
+import {FlatList, Pressable, Text, View} from 'react-native';
 import {ParamList, RouteNames} from './Navigation';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 interface DataItem {
   name: string;
@@ -34,8 +35,7 @@ const Entry: React.FC = () => {
   ];
 
   const onPress = (idx: number) => {
-
-    console.log(idx)
+    console.log(idx);
 
     switch (idx) {
       case 1:

@@ -10,6 +10,7 @@
 
 import React, {type PropsWithChildren} from 'react';
 import {SafeAreaView} from 'react-native';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import {NavigationContainer} from '@react-navigation/native';
 
@@ -18,7 +19,9 @@ import AppStack from './src/Navigation';
 const App = () => {
   return (
     <NavigationContainer>
-      <AppStack />
+      <SafeAreaProvider>
+        <AppStack />
+      </SafeAreaProvider>
     </NavigationContainer>
   );
 };
