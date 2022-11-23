@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/dentemm/FunWithSkia/compare/v1.1.0...v1.2.0) (2022-11-23)
+
+
+### Features
+
+* cool feature ([6d5cab6](https://github.com/dentemm/FunWithSkia/commit/6d5cab645add83c75009bc7cd001deb96ca0bba1))
+
+
+### Bug Fixes
+
+* major bugfix ([003f9ca](https://github.com/dentemm/FunWithSkia/commit/003f9cacaefe644a44f0eed6e3645c65b196fee1))
+* release please ([65caa85](https://github.com/dentemm/FunWithSkia/commit/65caa85fcf3fbabdcc984be3300070bd5f4e1d33))
+
 ## [1.1.0](https://github.com/dentemm/FunWithSkia/compare/v1.0.1...v1.1.0) (2022-11-17)
 
 
